@@ -1,0 +1,8 @@
+.post-head {
+  border-bottom: 1px solid $gray-300;
+}
+
+.post-related-title,
+.post-latest-title {
+  @include font-size(1.05rem)
+}

@@ -1,0 +1,46 @@
+// .widget-area {
+//   transition: all 0.15s ease-in-out;
+
+//   &.current {
+//     bottom: 0;
+//     left: 0;
+//     top: 0;
+//     width: 128px;
+
+//     &::after {
+//       background-color: $gray-800;
+//       bottom: 0;
+//       content: '';
+//       left: 128px;
+//       position: absolute;
+//       right: 0;
+//       top: 0;
+//       // width: 100vm;
+//       // z-index: 19;
+//     }
+//   }
+// }
+
+.menu-sidebar-container {
+  a {
+    color: $gray-800;
+
+    &:hover {
+      color: $blue;
+    }
+
+    &.active {
+      color: $blue;
+
+      &::before {
+        background-color: $blue;
+        bottom: 0.65rem;
+        content: '';
+        left: 0;
+        position: absolute;
+        top: 0.65rem;
+        width: 0.15rem;
+      }
+    }
+  }
+}

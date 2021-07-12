@@ -1,0 +1,42 @@
+.float {
+  bottom: 1.5rem;
+  right: 1rem;
+  z-index: 40;
+}
+
+.float-item {
+  cursor: pointer;
+  // height: 2rem;
+  // line-height: 2rem;
+  // width: 2rem;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+
+    &.btn {
+      padding-left: .5rem;
+      padding-right: .5rem;
+    }
+  }
+}
+
+.float-item-top {
+  background-color: $blue;
+
+  &:hover {
+    background-color: $indigo;
+  }
+}
+
+.footer-links {
+  span {
+    &::after {
+      content: ':';
+      position: absolute;
+      right: -0.5rem;
+      top: 0;
+    }
+  }
+}

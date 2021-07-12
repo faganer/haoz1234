@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: haoz1234\n"
+"POT-Creation-Date: 2021-04-29 12:35+0800\n"
+"PO-Revision-Date: 2021-04-29 12:35+0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "糟糕！找不到该页面。"
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr "貌似没有找到。是否使用搜索？"
+
+#: 404.php:30
+msgid "Most Used Categories"
+msgstr "最常用的分类"
+
+#. translators: %1$s: smiley
+#: 404.php:48
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "尝试查看每月归档。 %1$s"
+
+#: category.php:77 index.php:92 page.php:52 search.php:57 single.php:141
+msgid "Sorry, no posts matched your criteria."
+msgstr "对不起，没有文章符合您的标准。"
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:68
+msgid "Comments are closed."
+msgstr "评论被关闭"
+
+#: footer.php:26
+msgid "Links"
+msgstr "友情链接"
+
+#: functions.php:53
+msgid "Primary"
+msgstr "基本"
+
+#: functions.php:54 functions.php:128
+msgid "Sidebar"
+msgstr "侧栏"
+
+#: functions.php:130
+msgid "Add widgets here."
+msgstr "在这里添加小部件"
+
+#: index.php:51
+msgid "Collapse"
+msgstr "收起"
+
+#: index.php:51
+msgid "Expand"
+msgstr "展开"
+
+#: single.php:84
+msgid "Related content:"
+msgstr "相关内容"
+
+#: single.php:120
+msgid "Latest content:"
+msgstr "最新内容"
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "未找到"
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:25 template-parts/content.php:53
+msgid "Pages:"
+msgstr "页面:"
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page.php:39
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:40
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""

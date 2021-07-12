@@ -1,0 +1,51 @@
+{
+  "name": "haoz1234",
+  "version": "1.0",
+  "description": "A WordPress theme designed by wpmore.",
+  "main": "index.php",
+  "author": "wpmore.cn",
+  "license": "MIT",
+  "scripts": {
+    "stylelint": "stylelint src/sass/*.scss --fix"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/register": "^7.13.14",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^18.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "autoprefixer": "^10.2.5",
+    "bootstrap": "^4.6.0",
+    "cssnano": "^5.0.0",
+    "del": "^6.0.0",
+    "eslint": "^7.24.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-changed": "^4.0.2",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "rfs": "^9.0.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "stylelint": "^13.12.0",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-config-standard": "^21.0.0"
+  },
+  "browserslist": [
+    "firefox > 50",
+    "Safari > 9",
+    "Opera > 50",
+    "ie >= 10",
+    "chrome > 50"
+  ],
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,57 @@
+.main-content {
+  word-break: break-all;
+}
+
+.card {
+  border: $card-border-width solid $gray-200;
+}
+
+.blockquote {
+  @include font-size(0.9rem);
+
+  &::before {
+    content: '“';
+    font-size: 1.5rem;
+    left: 0.45rem;
+    position: absolute;
+    top: -0.1rem;
+  }
+}
+
+.sub-title {
+  @include font-size(1.2rem);
+}
+
+.sub-opt {
+  font-size: 95%;
+
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.archive-post-item {
+  .post-item {
+    &:nth-child(n+7) {
+      display: none;
+    }
+  }
+
+  &.current {
+    .post-item {
+      &:nth-child(n+7) {
+        display: block;
+      }
+    }
+  }
+
+  .card {
+    cursor: pointer;
+  }
+
+  .card-body {
+    padding: 0.65rem;
+  }
+}
