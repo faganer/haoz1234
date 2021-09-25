@@ -1,4 +1,15 @@
+
 .category {
   .sub-title {
-    @include font-size(1.5rem); }
+    @include font-size(1.5rem);
+  }
+}
+.archive{
+  .archive-post-item{
+    .post-item{
+      &:nth-child(n+7){
+        display: block;
+      }
+    }
+  }
 }

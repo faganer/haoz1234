@@ -43,6 +43,29 @@
 </ul>
 <!-- .float -->
 
+<div id="binancezhModal" class="modal fade" tabindex="-1" aria-labelledby="binancezhModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="binancezhModalLabel">超级返现</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<p>币安 - 全球最大的区块链资产交易平台</p>
+	  	<p>推荐ID：<span class="text-danger">NKJ1QTQS</span></p>
+		<p>您享受的返现比例： <span class="text-danger">5%</span></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">关闭</button>
+        <button type="button" class="btn btn-primary">立即注册</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- #binancezhModal -->
+
 <?php wp_footer(); ?>
 
 </body>

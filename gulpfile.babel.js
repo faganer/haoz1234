@@ -1,8 +1,5 @@
-import babel from '@rollup/plugin-babel'
-import commonjs from '@rollup/plugin-commonjs'
-import resolve from '@rollup/plugin-node-resolve'
-import { terser } from 'rollup-plugin-terser'
 
+const babel = require('gulp-babel')
 const autoprefixer = require('autoprefixer')
 const changed = require('gulp-changed')
 const cssnano = require('cssnano')
@@ -10,10 +7,9 @@ const del = require('del')
 const gulp = require('gulp')
 const postcss = require('gulp-postcss')
 const rename = require('gulp-rename')
-const rollup = require('rollup')
-const sass = require('gulp-sass')
-
-sass.compiler = require('node-sass')
+const sass = require('gulp-sass')(require('node-sass'))
+const terser = require('gulp-terser')
+const webpack = require('webpack-stream')
 
 const paths = {
   scss: {
@@ -61,28 +57,15 @@ function scss () {
 }
 
 function scripts () {
-  return rollup.rollup({
-    input: './src/js/main.js',
-    plugins: [
-      resolve(),
-      commonjs(),
-      babel({ babelHelpers: 'bundled' }),
-      terser({
-        keep_fnames: true,
-        format: {
-          quote_style: 1,
-          comments: false
-        }
-      })
-    ]
-  }).then(bundle => {
-    return bundle.write({
-      file: './dist/js/bundled.min.js',
-      format: 'iife',
-      name: 'bundled',
-      sourcemap: false
-    })
-  })
+  return gulp.src(paths.js.src, { sourcemaps: true })
+    .pipe(webpack(require('./webpack.config.js')))
+    .pipe(babel())
+    .pipe(terser())
+    .pipe(rename({
+      basename: 'bundled',
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest(paths.js.dest))
 }
 
 function images () {

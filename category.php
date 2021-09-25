@@ -63,12 +63,12 @@ get_header();
 								</div>
 								<!-- .row -->
 
-                <div class="row">
-                  <div class="col-24 text-center pt-3">
-                    <?php wp_pagenavi(); ?>
-                  </div>
-                </div>
-                <!-- .row -->
+								<div class="row">
+									<div class="col-24 text-center pt-3">
+										<?php wp_pagenavi(); ?>
+									</div>
+								</div>
+								<!-- .row -->
 
 							</div>
 							<!-- .archive-cat -->

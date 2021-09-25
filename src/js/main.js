@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 // import 'bootstrap/js/dist/util'
 // import 'bootstrap/js/dist/alert'
 // import 'bootstrap/js/dist/button'
@@ -52,6 +53,7 @@ $('.post-related-content li,.post-latest-content li').on('mouseleave', function 
 
 // Smooth Scroll
 // https://github.com/cferdinandi/smooth-scroll
+// eslint-disable-next-line no-unused-vars
 const scroll = new SmoothScroll('a[href*="#"]')
 
 // Footer
@@ -76,3 +78,17 @@ $('.wp-pagenavi span.extend,.wp-pagenavi a.last,.wp-pagenavi a.first').addClass(
 $('.footer-links ul').addClass('d-inline-flex list-unstyled')
 $('.footer-links li').addClass('ml-1 mr-1')
 $('.footer-links li a').addClass('text-white')
+
+// #binancezhModal
+if (!Cookies.get('binancezhModal')) {
+  $('#binancezhModal').modal('show')
+  $('#binancezhModal').on('shown.bs.modal', function () {
+    // eslint-disable-next-line no-undef
+    Cookies.set('binancezhModal', '1')
+    $('#binancezhModal .btn-primary').trigger('focus')
+    $('#binancezhModal .btn-primary').on('click', function () {
+      window.open('https://accounts.binancezh.top/zh-CN/register?ref=NKJ1QTQS', '_blank')
+      $('#binancezhModal').modal('hide')
+    })
+  })
+}

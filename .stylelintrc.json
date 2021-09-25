@@ -1,8 +1,9 @@
 {
-  "extends": ["stylelint-config-standard", "stylelint-config-sass-guidelines"],
+  "extends": [ "stylelint-config-twbs-bootstrap/scss", "stylelint-config-twbs-bootstrap/css"],
   "rules": {
     "max-nesting-depth": 3,
     "selector-class-pattern": null,
+    "at-rule-no-unknown":null,
     "selector-no-qualifying-type": [
       true,
       { "ignore": ["attribute", "class", "id"] }
